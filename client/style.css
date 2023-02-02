@@ -139,22 +139,46 @@ form img {
     height: 30px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .wrapper {
         width: 100%;
         padding: 1.5rem;
     }
     .message {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 12px;
+        line-height: 20px;
     }
-    .textarea {
-        font-size: 14px;
-        line-height: 22px;
+    textarea {
+        font-size: 12px;
+        line-height: 20px;
     }
     form {
+        position: sticky;
+        top: 100vh;
         padding: 0.6rem 1rem;
         gap: 10px;
-        border-radius: 12px 12px 0 0;
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .message {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    textarea {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    form {
+        position: sticky;
+        top: 100vh;
+        padding: 0.6rem 1rem;
+        gap: 10px;
+        border-radius: 15px 15px 0 0;
     }
 }
