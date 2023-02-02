@@ -139,7 +139,7 @@ form img {
     height: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
     .wrapper {
         width: 100%;
         padding: 1.5rem;
