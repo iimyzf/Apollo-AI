@@ -52,12 +52,13 @@ body {
 }
 
 .chat {
-    width: 100%;
-    max-width: 1280px;
+    /* background-color: red; */
+    width: 80%;
+    max-width: 1150px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -90,12 +91,13 @@ body {
     color: #dcdcdc;
     font-size: 16px;
     line-height: 26px;
-    max-width: 100%;
+    max-width: 80%;
     overflow-x: scroll;
     white-space: pre-wrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    padding-top: 0.4rem;
 }
 
 /* hides scrollbar */
@@ -104,27 +106,30 @@ body {
 }
 
 form {
-    width: 100%;
+    width: 60%;
+    /* height: 80px; */
     max-width: 1280px;
     margin: 0 auto;
-    padding: 1.2rem 1rem;
+    padding: 0.75rem 0.75rem;
     background: #22263a;
     display: flex;
     flex-direction: row;
     gap: 12px;
-    border-radius: 15px 15px 0 0;
+    margin-bottom: 1.5rem;
 }
 
 textarea {
+    max-height: 200px;
     width: 100%;
     color: #fff;
     font-size: 16px;
     line-height: 26px;
     padding: 10px;
     background: transparent;
-    border-radius: 5px;
     border: none;
     outline: none;
+    resize: none;
+    padding-top: 1rem;
 }
 
 button {
@@ -135,8 +140,16 @@ button {
 }
 
 form img {
+    margin-top: 0.5rem;
     width: 30px;
     height: 30px;
+}
+
+.footer {
+    background: #22263a;
+    text-align: center;
+    padding: 1rem;
+    color: white;
 }
 
 @media screen and (max-width: 380px) {
@@ -151,13 +164,13 @@ form img {
     textarea {
         font-size: 12px;
         line-height: 20px;
+        padding-top: 1.2rem;
     }
     form {
         position: sticky;
         top: 100vh;
-        padding: 0.6rem 1rem;
+        padding: 0.6rem 0.6rem;
         gap: 10px;
-        border-radius: 15px 15px 0 0;
     }
 }
 
@@ -173,12 +186,12 @@ form img {
     textarea {
         font-size: 12px;
         line-height: 20px;
+        padding-top: 1.2rem;
     }
     form {
         position: sticky;
         top: 100vh;
-        padding: 0.6rem 1rem;
+        padding: 0.6rem 0.6rem;
         gap: 10px;
-        border-radius: 15px 15px 0 0;
     }
 }
